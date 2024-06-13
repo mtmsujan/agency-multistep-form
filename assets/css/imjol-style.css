@@ -1,0 +1,1181 @@
+/* =====================================
+Template Name: imjol
+Author Name: Raisul
+========================================*/
+/*======================================
+	General CSS
+========================================*/
+@import url('imjol-responsive.css');
+
+@font-face {
+  font-family: "Red Hat Display";
+  src: url('/assets/fonts/RedHatDisplay-Regular.ttf');
+}
+
+body{
+  font-family: 'Red Hat Display', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 16px !important;                                                                                                                     
+}
+.imjol-form__inner--quiz.imjol-form__inner--quiz--v5 {
+	padding: 0 60px;
+}
+.text {
+  text-align: center;
+  font-size: 20px;
+  color: #87ceeb;
+  font-weight: 700;
+}
+
+.imjol-form__layout div {
+  position: relative;
+  width: 100%;
+}
+
+.imjol-bg-none {
+  background: none !important;
+}
+
+.imjol-form {
+  overflow: hidden;
+}
+
+.imjol-form__100vh {
+  min-height: 100vh;
+}
+
+.imjol-form__jcenter {
+  display: flex;
+  justify-content: center !important;
+}
+
+.imjol-form__ccolumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imjol-form__acenter {
+  display: flex;
+  align-items: center !important;
+}
+
+.imjol-btn {
+  padding: 0 22px;
+  text-align: center;
+  height: 56px;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3 linear;
+  transition: all 0.3 linear;
+  border: none;
+  position: relative;
+  background: #3d46fb;
+  font-size: 16px;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: initial;
+  display: inline-flex;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.imjol-btn i {
+  font-size: 13px;
+}
+
+.imjol-btn:hover {
+  background: #101010;
+}
+
+.nice-select .list {
+  width: 100%;
+}
+
+/*======================================
+	imjol Basic
+========================================*/
+
+.imjol-forms .form-group {
+  margin-top: 20px;
+  position: relative;
+}
+
+.imjol-forms label {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #101010;
+  margin-bottom: 5px;
+}
+
+.imjol-forms input,
+.imjol-forms textarea,
+.imjol-forms select,
+.imjol-forms .nice-select {
+  width: 100%;
+  height: 52px;
+  padding: 5px 15px 5px 15px;
+  background: none !important;
+  border: 1px solid #dcdfe6;
+  color: #070707 !important;
+  border-radius: 8px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  display: flex;
+  align-items: center;
+  font-family: 'Red Hat Display', sans-serif !important;
+}
+
+.add_but {
+  background-color: #00C3FF;
+  color: #fff;
+  font-size: 18px;
+  width: 190px;
+  height: 56px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 40px;
+  margin-top: 7px;
+  font-family: 'Red Hat Display', sans-serif !important;
+}
+.add_but:hover{
+  color: #000 !important;
+  background-color: #fff !important;
+  border: 1px solid #00C3FF;
+}
+
+.imjol-forms textarea {
+  min-height: 120px;
+  padding-top: 15px;
+}
+
+.imjol-forms input::-moz-placeholder,
+.imjol-forms textarea::-moz-placeholder {
+  color: #4b5563 !important;
+  opacity: 1 !important;
+}
+
+.imjol-forms input::-webkit-input-placeholder,
+.imjol-forms textarea::-webkit-input-placeholder {
+  color: #4b5563 !important;
+  opacity: 1 !important;
+}
+
+.imjol-forms input:-ms-input-placeholder,
+.imjol-forms textarea:-ms-input-placeholder {
+  color: #4b5563 !important;
+  opacity: 1 !important;
+}
+
+.imjol-forms .form-group input:hover,
+.imjol-forms .form-group textarea:hover {
+  border-color: #0087f1;
+}
+
+.imjol-forms .imjol-forms__input {
+  position: relative;
+}
+
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px !important;
+  height: 20px !important;
+  background: #eceaff;
+  border-radius: 0%;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  padding: 0 !important;
+  border-radius: 6px !important;
+  background: transparent !important;
+  border: 1px solid #d0d5dd !important;
+}
+
+input[type="checkbox"]:checked {
+  background: #0a82fd !important;
+  border-color: transparent !important;
+}
+
+input[type="checkbox"]:checked::before {
+  content: "\f00c";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 10px;
+}
+
+.imjol-checkbox-v2[type="checkbox"] {
+  border-radius: 100px !important;
+  border: 1px solid #c4c4c4;
+  width: 20px !important;
+  height: 20px !important;
+}
+/*======================================
+	imjol Layout V1
+========================================*/
+.imjol-form__layout {
+  background: #fff;
+  display: flex;
+  overflow: hidden;
+}
+
+.imjol-form__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 180px;
+  max-width: 500px;
+  min-width: 500px;
+}
+
+.imjol-forms__checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.imjol-forms__spaceb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.imjol-forms__checkbox label {
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.imjol-forms--v3 .imjol-btn:hover {
+  background: #fff;
+  color: #3d46fb;
+}
+
+.imjol-forms--v5 .imjol-forms__checkbox label {
+  font-size: 16px;
+}
+
+.imjol-forms__v7 .imjol-btn {
+  height: 50px;
+}
+/*======================================
+	End imjol Donation Form
+========================================*/
+.tab-pane {
+  padding: 20px;
+}
+
+.imjol-forms__quiz-title--v5 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.imjol-forms__quiz-form {
+  margin-top: 40px;
+}
+
+.time-dropdown {
+  position: relative;
+}
+
+.time-dropdown-button {
+  background-color: #107eeb;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.time-dropdown-content {
+  display: block !important;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.time-dropdown-content a {
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none !important;
+  color: #333 !important;
+  font-weight: 500;
+  font-family: 'Red Hat Display', sans-serif !important;
+}
+
+
+.custom-field-input {
+  display: none;
+  margin-top: 20px;
+}
+
+#customField {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.imjol-btn {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Your CSS styles here */
+.imjol-dropdown-content {
+  display: block;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+.imjol-dropdown-content a {
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+
+.icr .imjol-dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.imjol-forms.imjol-forms__contact .imjol-forms__checkbox input {
+  border-color: #55555542 !important;
+  background: #f8f9fa !important;
+}
+
+.imjol-forms.imjol-forms__contact
+  .imjol-forms__checkbox
+  input[type="checkbox"]:checked::before {
+  color: #e8384f;
+}
+
+.imjol-forms.imjol-forms__contact .imjol-forms__checkbox label {
+  color: #1f324d;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.imjol-forms.imjol-forms__contact .imjol-forms__checkbox a {
+  font-weight: 700;
+  color: #1f324d;
+}
+
+.icr .imjol-forms.imjol-forms__contact .imjol-forms__checkbox a:hover {
+  color: #e8384f;
+}
+
+.imjol-forms--contact8 .imjol-forms__checkbox input[type="checkbox"] {
+  border-radius: 3px !important;
+  border: 1px solid #d0d5dd !important;
+  background: transparent !important;
+}
+
+.imjol-forms--contact8
+  .imjol-forms__checkbox
+  input[type="checkbox"]:checked:before {
+  background: #267dff;
+}
+
+.imjol-forms--contact8
+  .imjol-forms__checkbox
+  input[type="checkbox"]:checked {
+  border-color: transparent !important;
+}
+
+
+/*======================================
+	Quiz Form
+========================================*/
+.imjol-form__layout--quiz {
+  width: 100%;
+  padding: 50px 0;
+}
+
+.imjol-form__inner--quiz {
+  max-width: 650px;
+  min-width: 650px;
+}
+
+.imjol-forms__input--quiz-label {
+  border-radius: 5px;
+  border: 2px solid #fff;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  padding: 0 25px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+}
+
+/* Style the title and description */
+.imjol-forms__quiz-title--v5 {
+  font-size: 24px;
+  color: #333;
+}
+
+.imjol-forms__quiz-text--v5 {
+  font-size: 16px;
+  color: #666;
+}
+
+.imjol-forms__input--quiz-label {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.imjol-forms__quiz-value {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.imjol-forms__input:checked + .imjol-forms__input--quiz-label {
+  background-color: #00c853;
+}
+/* Style the buttons */
+.imjol-btn {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.imjol-btn:hover {
+  background-color: #ffffff;
+}
+
+/* Add spacing between elements */
+.imjol-mg-top-15 {
+  margin-top: 15px;
+}
+
+.imjol-mg-top-30 {
+  margin-top: 30px;
+}
+
+.imjol-mg-top-40 {
+  margin-top: 40px;
+}
+
+.imjol-forms__quiz-check,
+.imjol-forms__quiz-check--role {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  position: relative;
+  border-radius: 50px;
+}
+
+.imjol-forms__quiz-check::after,
+.imjol-forms__quiz-check--role::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  font-weight: bold;
+  border: solid #0087f1;
+  border-top-width: medium;
+  border-right-width: medium;
+  border-bottom-width: medium;
+  border-left-width: medium;
+  border-width: 7px 7px 7px 7px;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  border-radius: 50%;
+}
+
+/* Add this CSS to make the checkmark visible when the checkbox is checked */
+.imjol-forms__input[type="checkbox"]:checked
+  + .imjol-forms__input--quiz-label
+  .imjol-forms__quiz-check::after,
+.imjol-forms__input[type="checkbox"]:checked
+  + .imjol-forms__input--quiz-label
+  .imjol-forms__quiz-check--role::after {
+  display: block;
+}
+
+.imjol-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.prev-step {
+  float: left;
+}
+
+.next-step {
+  float: right;
+}
+
+.imjol-forms__quiz-form input:checked + .imjol-forms__input--quiz-label {
+  background-color: #7433bc;
+}
+
+.imjol-forms__quiz-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.imjol-forms__quiz-form .imjol-btn {
+  min-width: 228px;
+  background: #107eeb;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.imjol-forms__quiz-form .imjol-btn:hover,
+.imjol-forms__quiz-form .imjol-btn.prev-step:hover {
+  background-color: #fff;
+  color: #107eeb;
+}
+
+.imjol-forms__quiz-form .imjol-forms__button {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Form V2 */
+/* Style for the "Right Your Requirement?" title */
+.imjol-forms__quiz-title--v5 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.imjol-forms__quiz--v2 .imjol-forms__input--quiz-label {
+  background-color: #ab6fdb !important;
+  border-radius: 50px !important;
+  min-height: 80px;
+}
+
+.imjol-btn {
+  background-color: #007bff;
+  color: #151d44;
+  min-width: 242px;
+  min-height: 66px;
+}
+
+.imjol-btn:hover {
+  color: #000 !important;
+  background-color: #fff !important;
+  border: 1px solid #0087f1;
+}
+
+.imjol-form__inner--quiz {
+  min-width: 750px;
+  max-width: 750px;
+}
+
+.imjol-forms__quiz--v3 .imjol-forms__input--quiz-label {
+  border-radius: 6px;
+  background: #fff !important;
+  box-shadow: 0px 2px 12px 0px rgba(16, 24, 40, 0.06);
+}
+
+/* Style for the dropdown container */
+.budget-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style for the button */
+.budget-dropdown-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Style for the dropdown content */
+.budget-dropdown-content {
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Style for dropdown items */
+.budget-dropdown-content a {
+  color: black !important;
+  padding: 12px 16px;
+  text-decoration: none !important;
+  display: block;
+  border: 1px solid #ddd;
+  transition: none;
+  font-weight: 500;
+  font-family: 'Red Hat Display', sans-serif !important;
+}
+
+.icr .budget-dropdown-content a:active, a:focus{
+  color: #0087F1 !important;
+}
+
+.budget-dropdown-content {
+  display: block !important;
+}
+/* Style for custom field input */
+.custom-field-input {
+  display: none;
+}
+
+.imjol-form__quiz-banner {
+  padding: 30px 50px;
+  min-width: 26.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+  background: #0160e7;
+  background-color: transparent;
+  /* background-image: linear-gradient(145deg, #0039E4 0%, #04DBF1 100%); */
+}
+
+
+.imjol-form__layout--quiz-main {
+  min-width: 74.5%;
+  padding: 50px;
+}
+
+.imjol-btn {
+  color: #fff;
+}
+
+.imjol-form__qzcountdown {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  margin-bottom: 25px !important;
+  position: absolute !important;
+  top: 50px;
+  right: 60px;
+}
+
+.imjol-form__progress--v4 {
+  background: #b4c8e8 !important;
+  border-radius: 25px;
+  height: 20px;
+}
+
+.imjol-form__quiz-banner-progress--percent {
+  color: #fff;
+  margin-bottom: 15px;
+  display: block;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.imjol-form__form-box--v4 .imjol-btn.prev-step {
+  background: #01cc74;
+  justify-content: center;
+  color: #fff !important;
+}
+
+.imjol-form__form-box--v4 .imjol-btn.prev-step:hover {
+  background: #fff;
+  color: #01cc74 !important;
+}
+
+/* V5 */
+.imjol-form__quiz-banner--v5 {
+  min-width: 41%;
+}
+
+.imjol-form__layout--quiz-main--v5 {
+  min-width: 59%;
+  background-color: #fff;
+}
+
+.imjol-form__quiz-banner--v5 {
+  min-width: 41%;
+}
+
+.imjol-form__quiz-banner--title {
+  font-size: 60px;
+  font-weight: 700 !important;
+  line-height: 108% !important;
+  margin-bottom: 30px !important;
+  color: #fff !important;
+}
+
+.imjol-form__quiz-banner--text {
+  font-size: 16px !important;
+  font-weight: 400;
+  color: #efeeee;
+}
+
+.imjol-form__nav {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between !important;
+  min-width: 100%;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.imjol-form__nav a.list-group-item {
+  border: 1px solid #444343;
+  background: #fff;
+  color: #0d0d0d;
+  border-radius: 30px;
+  font-size: 16px;
+  min-width: 80px;
+  min-height: 44px;
+  text-decoration: none !important;
+}
+
+.imjol-form__nav:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+  background: #656565;
+  margin-top: -0.5px;
+}
+
+.imjol-forms__quiz-title--v5 {
+  color: #050202;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.imjol-forms__quiz-text--v5 {
+  color: #a3a4a7;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 15px !important;
+  display: block;
+}
+
+.imjol-forms__input--role {
+  min-height: 0px;
+}
+
+.imjol-forms__role {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.imjol-forms__role-title {
+  color: #000000;
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.imjol-forms__role img {
+  max-width: 40px !important;
+}
+
+.imjol-forms__input--role {
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.28);
+  background: #fff !important;
+}
+
+.imjol-forms__quiz-check--role {
+  top: 15px;
+  min-width: 22px;
+  min-height: 22px;
+  max-width: 22px;
+  max-height: 22px;
+}
+
+.imjol-forms__input--role {
+  align-items: inherit;
+}
+
+.imjol-forms--role-form .imjol-btn {
+  min-width: 160px;
+  font-size: 18px;
+  min-height: 58px;
+  font-family: 'Red Hat Display', sans-serif !important;
+}
+
+.imjol-form__nav a.list-group-item.active,
+.imjol-form__nav a.list-group-item:hover {
+  border-color: transparent;
+  background: #007bff;
+  color: #ffffff !important;
+}
+
+.imjol-forms--role-form .imjol-btn.prev-step {
+  color: #fff;
+}
+
+.imjol-forms__quiz-form--v5 input,
+.imjol-forms__quiz-form--v5 textarea {
+  color: #040404 !important;
+}
+
+.imjol-forms__quiz-form--v5 textarea {
+  min-height: 115px;
+}
+
+.imjol-forms__quiz-form--v5 label {
+  color: #0c0a0a;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.imjol-forms__quiz-form--v5 label span {
+  color: #c10000;
+}
+
+.imjol-forms__quiz-form--v5 input::-moz-placeholder,
+.imjol-forms__quiz-form--v5 textarea::-moz-placeholder {
+  color: #9aa1ac !important;
+  opacity: 1 !important;
+}
+
+.imjol-forms__quiz-form--v5 input::-webkit-input-placeholder,
+.imjol-forms__quiz-form--v5 textarea::-webkit-input-placeholder {
+  color: #9aa1ac !important;
+  opacity: 1 !important;
+}
+
+.imjol-forms__quiz-form--v5 input:-ms-input-placeholder,
+.imjol-forms__quiz-form--v5 textarea:-ms-input-placeholder {
+  color: #9aa1ac !important;
+  opacity: 1 !important;
+}
+
+.imjol-forms__quiz-form--v5 .imjol-forms__checkbox label {
+  color: #0a0a0a;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.imjol-forms__quiz-form--v5 .imjol-forms__checkbox label a {
+  font-weight: 400;
+}
+
+.imjol-forms__quiz-form--v5 .imjol-forms__input--quiz-label {
+  background: transparent !important;
+}
+
+.imjol-forms__quiz-form--v5 .imjol-forms__quiz-check {
+  min-width: 20px;
+  min-height: 20px;
+}
+
+.imjol-forms__quiz-form--v5 .imjol-forms__quiz-value {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.imjol-forms__quiz-form--v5-select label {
+  height: 60px;
+}
+
+.imjol-forms__input--cards label .imjol-forms__quiz-value {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #9aa1ac;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.imjol-forms__quiz-form--v5
+  input:checked
+  + .imjol-forms__input--quiz-label
+  .imjol-forms__quiz-value {
+  color: #fff;
+}
+
+.imjol-form__quiz-banner--content {
+  max-width: 540px;
+}
+
+.imjol-forms__quiz--v6 .imjol-forms__checkbox label {
+  color: #5e6571 !important;
+  font-weight: 500;
+}
+
+.imjol-forms__quiz-form--selectv6 .imjol-forms__input--quiz-label {
+  border-color: #c3c2d4;
+  border-width: 1px;
+  border-radius: 6px;
+  height: 60px;
+  background: transparent !important;
+  justify-content: initial;
+  gap: 15px;
+}
+
+.imjol-forms__quiz-form--selectv6 .imjol-forms__quiz-check {
+  border-color: #aab7c2;
+  width: 20px !important;
+  height: 20px !important;
+  min-width: 20px !important;
+  min-height: 20px !important;
+  border-width: 1px;
+}
+
+.imjol-forms__quiz-form--selectv6
+  input:checked
+  + .imjol-forms__input--quiz-label
+  .imjol-forms__quiz-value {
+  color: #4065ed !important;
+}
+
+.imjol-forms__quiz-form--selectv6
+  input:checked
+  + .imjol-forms__input--quiz-label
+  .imjol-forms__quiz-check::before {
+  background-color: #4065ed !important;
+  color: #fff !important;
+}
+
+.imjol-forms__quiz-form--selectv6
+  input:checked
+  + .imjol-forms__input--quiz-label {
+  border-color: #4065ed !important;
+}
+
+.imjol-forms__input--quiz--v8 .imjol-forms__input--quiz-label {
+  min-width: 475px;
+  min-height: 115px;
+  border: none;
+  justify-content: start;
+  max-width: 475px;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+
+.imjol-forms__quiz--v8 .imjol-forms__input--quiz-label {
+  background-color: transparent !important;
+}
+
+.imjol-forms__quiz--v8
+  .imjol-forms__input--quiz
+  input:checked
+  + .imjol-forms__input--quiz-label
+  .imjol-forms-item-sgroup--one {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.imjol-forms__quiz--v8
+  .imjol-forms__input--quiz
+  input:checked
+  + .imjol-forms__input--quiz-label
+  .imjol-forms-item-sgroup--two {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+.imjol-forms__quiz-form--shapes-bg .form-group {
+  margin-top: 50px !important;
+}
+
+.imjol-forms__quiz--v8 .imjol-btn {
+  min-width: 270px;
+  min-height: 70px;
+  background: #09bdf9;
+  border-radius: 50px;
+  font-size: 18px;
+}
+
+.imjol-forms__quiz--v8 .imjol-btn:hover,
+.imjol-forms__quiz--v8 .imjol-btn.prev-step {
+  background: #fff;
+  color: #09bdf9;
+}
+
+.imjol-forms__quiz--v8 .imjol-btn.prev-step:hover {
+  background-color: #09bdf9;
+  color: #fff;
+}
+
+.imjol-forms__quiz--v8 .imjol-forms__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imjol-forms__quiz--v8 .imjol-forms__quiz-single {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imjol-header {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  z-index: 333;
+  justify-content: center;
+  top: 25px;
+}
+
+.forify-header__inner {
+  max-width: 1050px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.imjol-header__nav {
+  display: flex;
+  align-items: center;
+  gap: 65px;
+}
+
+.imjol-header__nav li a {
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.icr .imjol-header__nav li a:hover {
+  color: #3d46fb;
+}
+
+.imjol-forms__v8 .imjol-btn:hover {
+  background: linear-gradient(270deg, #b462b7 0%, #ff4176 100%);
+}
+
+.icr .imjol-forms__text a:hover {
+  opacity: 0.7 !important;
+}
+
+.imjol-forms__quiz--v5
+  .imjol-forms__quiz-form
+  input:checked
+  + .imjol-forms__input--quiz-label {
+  border-color: #107eeb !important;
+}
+
+.required {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px !important;
+  border: none;
+  margin-bottom: 10px !important;
+  width: 100% !important;
+  font-family: 'Red Hat Display', sans-serif !important;
+}
+
+.budget-dropdown-button,
+.time-dropdown-button {
+  width: 100% !important;
+  font-family: 'Red Hat Display', sans-serif !important;
+}
+
+
+.list-group.imjol-form__nav {
+  text-align: center !important;
+}
+
+.success-message {
+  display: none;
+}
+
+.error-message{
+  display: none;
+}
+.error-check-web-app-soft{
+  display: none;
+}
+
+.error-requirement-message{
+  display: none;
+}
+
+.error-budget-message{
+  display: none;
+}
+
+.error-deadline-message{
+  display: none;
+}
+
+#form-address:hover{
+	border-color: #0087F1;
+}
+
+textarea.custom-requirement-field.mt-3 {
+  border-radius: 8px 8px 0 0 !important;
+  -webkit-border-radius: 8px 8px 0 0 !important;
+  -moz-border-radius: 8px 8px 0 0 !important;
+  -ms-border-radius: 8px 8px 0 0 !important;
+  -o-border-radius: 8px 8px 0 0 !important;
+}
+
+.remove-btn {
+	margin-top: 12px;
+	padding: 7px 26px;
+	border: none;
+	border-radius: 5px;
+	background: #FE4C1C;
+	color: #fff;
+	transition: all 0.4s;
+	border: 1px solid transparent;
+}
+.remove-btn:hover
+{
+  color: #000 !important;
+  background-color: #fff !important;
+  border: 1px solid #FE4C1C;
+}
+
+.imjol-form__form-box .list-group .list-group-item{
+  pointer-events: none;
+}
